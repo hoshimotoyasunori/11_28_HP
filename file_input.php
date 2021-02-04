@@ -10,25 +10,31 @@ check_session_id();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DB連携型todoリスト（入力画面）</title>
+  <title>データ投稿画面</title>
 </head>
 
 <body>
   <form action="create_file.php" method="POST" enctype="multipart/form-data">
     <fieldset>
-      <legend>DB連携型todoリスト（入力画面）</legend>
+      <legend>データ投稿画面</legend>
 
       <div>
         date: <input type="date" name="date">
       </div>
       <div>
-        filename: <select name="filename" id="">
+        タグ１: <select name="filename" id="">
           <option value="game">game</option>
           <option value="traning">traning</option>
           <option value="lineout">lineout</option>
           <option value="scrum">scrum</option>
           <option value="kick">kick</option>
           <option value="tackle">tackle</option>
+        </select>
+        タグ2: <select name="filename0" id="">
+          <option value="team">team</option>
+          <option value="fw">fw</option>
+          <option value="bk">bk</option>
+          <option value="private">private</option>
         </select>
       </div>
       <div>

@@ -264,7 +264,7 @@ if ($status == false) {
           </div> -->
                 </div>
                 <hr>
-                <h3>FW Data Gallery</h3>
+                <h3>BK Data Gallery</h3>
                 <div class="row">
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
                         <img src="http://via.placeholder.com/120x85/e74c3c/ffffff/" alt=""></div>

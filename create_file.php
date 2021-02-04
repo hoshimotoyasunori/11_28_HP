@@ -6,7 +6,8 @@ check_session_id();
 // exit();
 if (
   !isset($_POST['date']) || $_POST['date'] == '' ||
-  !isset($_POST['filename']) || $_POST['filename'] == ''
+  !isset($_POST['filename']) || $_POST['filename'] == '' ||
+  !isset($_POST['filename0']) || $_POST['filename0'] == ''
 ) {
   // 項目が入力されていない場合はここでエラーを出力し，以降の処理を中止する
   echo json_encode(["error_msg" => "no input"]);
@@ -16,6 +17,7 @@ if (
 // 受け取ったデータを変数に入れる
 $date = $_POST['date'];
 $filename = $_POST['filename'];
+$filename0 = $_POST['filename0'];
 
 
 // ここからファイルアップロード&DB登録の処理を追加しよう！！！
@@ -28,7 +30,7 @@ if (!isset($_FILES['upfile']) || $_FILES['upfile']['error'] != 0) {
 
   // コード
   $extension = pathinfo($uploaded_file_name, PATHINFO_EXTENSION);
-  $unique_name = $filename . date('YmdHis') . md5(session_id()) . "." . $extension;
+  $unique_name = $filename . $filename0 . date('YmdHis') . md5(session_id()) . "." . $extension;
   $filename_to_save = $directory_path . $unique_name;
   // var_dump($filename_to_save);
   // exit();
@@ -47,12 +49,13 @@ if (!isset($_FILES['upfile']) || $_FILES['upfile']['error'] != 0) {
 $pdo = connect_to_db();
 // $/ データ登録SQL作成
 // `created_at`と`updated_at`には実行時の`sysdate()`関数を用いて実行時の日時を入力する
-$sql = 'INSERT INTO media(id, date, filename, image, created_at, updated_at) VALUES(NULL, :date, :filename, :image, sysdate(), sysdate())';
+$sql = 'INSERT INTO media(id, date, filename, filename0, image, created_at, updated_at) VALUES(NULL, :date, :filename, :filename0, :image, sysdate(), sysdate())';
 
 // SQL準備&実行
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':date', $date, PDO::PARAM_STR);
 $stmt->bindValue(':filename', $filename, PDO::PARAM_STR);
+$stmt->bindValue(':filename0', $filename0, PDO::PARAM_STR);
 $stmt->bindValue(':image', $filename_to_save, PDO::PARAM_STR);
 $status = $stmt->execute();
 

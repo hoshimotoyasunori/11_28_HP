@@ -181,7 +181,7 @@ if ($status == false) {
         </div> -->
         <hr>
 
-        <div class="align-right padded"><a href="#" class="gap-right">My Account <i class="icon-user"></i></a><a href="#" class="gap-right">View Cart <i class="icon-shopping-cart"></i></a><a href="#">Sign Out <i class="icon-signout"></i></a></div>
+        <!-- <div class="align-right padded"><a href="#" class="gap-right">My Account <i class="icon-user"></i></a><a href="#" class="gap-right">View Cart <i class="icon-shopping-cart"></i></a><a href="#">Sign Out <i class="icon-signout"></i></a></div> -->
         <div class="row">
             <form action="file_upload.php" method="POST" enctype="multipart/form-data">
 
@@ -196,7 +196,7 @@ if ($status == false) {
             </form>
 
 
-            <aside class="one fifth padded bounceInLeft animated">
+            <!-- <aside class="one sixth padded bounceInLeft animated">
                 <nav title="Shop by Category" role="menu" class="small-tablet nav vertical menu">
                     <ul>
                         <li class="one whole"><a>Nav item #1</a></li>
@@ -206,105 +206,105 @@ if ($status == false) {
                         <li class="one whole"><a>Nav item #5</a></li>
                     </ul>
                 </nav>
-            </aside>
+            </aside> -->
 
 
-            <article class="four fifths">
+            <article class="four second">
                 <div class="row">
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInDown animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 1</h4><img src="http://via.placeholder.com/300x300/2ecc71/ffffff/&amp;text=Product+1">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 1</h4><img src="http://via.placeholder.com/300x300/2ecc71/ffffff/&amp;text=投稿日+1">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInUp animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 2</h4><img src="http://via.placeholder.com/300x300/3498db/ffffff/&amp;text=Product+2">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 2</h4><img src="http://via.placeholder.com/300x300/3498db/ffffff/&amp;text=投稿日+2">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded rotateInDownRight animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 3</h4><img src="http://via.placeholder.com/300x300/9b59b6/ffffff/&amp;text=Product+3">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 3</h4><img src="http://via.placeholder.com/300x300/9b59b6/ffffff/&amp;text=投稿日+3">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInRight animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 4</h4><img src="http://via.placeholder.com/300x300/f1c40f/ffffff/&amp;text=Product+4">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 4</h4><img src="http://via.placeholder.com/300x300/f1c40f/ffffff/&amp;text=投稿日+4">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInDown animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 5</h4><img src="http://via.placeholder.com/300x300/e67e22/ffffff/&amp;text=Product+5">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 5</h4><img src="http://via.placeholder.com/300x300/e67e22/ffffff/&amp;text=投稿日+5">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInUp animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 6</h4><img src="http://via.placeholder.com/300x300/e74c3c/ffffff/&amp;text=Product+6">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 6</h4><img src="http://via.placeholder.com/300x300/e74c3c/ffffff/&amp;text=投稿日+6">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded rotateInDownRight animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 7</h4><img src="http://via.placeholder.com/300x300/f02475/ffffff/&amp;text=Product+7">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 7</h4><img src="http://via.placeholder.com/300x300/f02475/ffffff/&amp;text=投稿日+7">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInRight animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 8</h4><img src="http://via.placeholder.com/300x300/1abc9c/ffffff/&amp;text=Product+8">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 8</h4><img src="http://via.placeholder.com/300x300/1abc9c/ffffff/&amp;text=投稿日+8">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInDown animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInDown animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 9</h4><img src="http://via.placeholder.com/300x300/34495e/ffffff/&amp;text=Product+9">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 9</h4><img src="http://via.placeholder.com/300x300/34495e/ffffff/&amp;text=投稿日+9">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInUp animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInUp animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 10</h4><img src="http://via.placeholder.com/300x300/2ecc71/ffffff/&amp;text=Product+10">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 10</h4><img src="http://via.placeholder.com/300x300/2ecc71/ffffff/&amp;text=投稿日+10">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded rotateInDownRight animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded rotateInDownRight animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 11</h4><img src="http://via.placeholder.com/300x300/3498db/ffffff/&amp;text=Product+11">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 11</h4><img src="http://via.placeholder.com/300x300/3498db/ffffff/&amp;text=投稿日+11">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
-                    <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInRight animated">
+                    <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInRight animated">
                         <div class="box">
-                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 12</h4><img src="http://via.placeholder.com/300x300/f1c40f/ffffff/&amp;text=Product+12">
-                            <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+                            <h4 data-compression="7" data-max="20" class="responsive align-center zero">投稿日 12</h4><img src="http://via.placeholder.com/300x300/f1c40f/ffffff/&amp;text=投稿日+12">
+                            <p class="truncate">
+                            </p>
+                            <p>投稿者名</p>
                         </div>
                     </div>
                 </div>
@@ -318,7 +318,7 @@ if ($status == false) {
         <div class="box square charcoal">
             <div class="container padded">
                 <div class="row">
-                    <div class="one small-tablet fourth padded">
+                    <div class="one small-tablet sixth padded">
                         <h5 class="green">Team Gallery</h5>
                         <ul class="unstyled">
                             <li><a href="fw_page.php">FW </a></li>
@@ -327,7 +327,7 @@ if ($status == false) {
                             <li><a href="game_page.php">Game</a></li>
                         </ul>
                     </div>
-                    <div class="three small-tablet fourths padded">
+                    <div class="three small-tablet fifths padded">
                         <h5 class="blue">Health saport</h5>
                         <ul class="unstyled three-column two-column-mobile">
                             <li><a href="./grid.html" title="Responsive grid system, grid adapters and helpers">Nutrition</a></li>

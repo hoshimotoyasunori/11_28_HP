@@ -25,7 +25,7 @@ if ($status == false) {
 
 
 $search_word = $_GET["serchword"];
-$sql = "SELECT image FROM media WHERE filename LIKE '%{$search_word}%'";
+$sql = "SELECT image FROM media WHERE filename LIKE '%{$search_word}%' order by id desc";
 $stmt = $pdo->prepare($sql);
 $status = $stmt->execute();
 
@@ -56,7 +56,7 @@ if ($status == false) {
     <!-- jQuery-->
     <!-- <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> -->
     <!-- framework css -->
-    <!--[if gt IE 9]><!-->
+    <!-- if gt IE 9-- -->
     <link type="text/css" rel="stylesheet" href="css/groundwork.css">
 
     <style type="text/css">
@@ -78,7 +78,7 @@ if ($status == false) {
             margin-right: 0.3em;
         }
     </style>
-    <!-- snippet (syntax highlighting for code examples)-->
+    <!-- snippet (syntax highlighting for code examples) -->
     <!-- <script type="text/javascript" src="js/jquery.snippet.min.js"></script> -->
     <link type="text/css" rel="stylesheet" href="css/jquery.snippet.css">
     <!-- <script type="text/javascript">
@@ -119,7 +119,7 @@ if ($status == false) {
                             Gallery
                         </a>
                     </h1>
-                    <p>⇒<a href="file_input.php">Add to Media</a></p>
+                    <a href="file_input.php">⇒Add to Media</a>
 
                 </div>
                 <div class="one half">
@@ -130,60 +130,31 @@ if ($status == false) {
                     </p>
                 </div>
             </div>
-            <nav role="navigation" class="nav gap-top" id="home">
-                <ul role="menubar">
-                    <!-- list1 -->
-                    <li>
-                        <button>Fowards</button>
-                        <ul>
-                            <li><a href="fw_page.php">FW Page</a></li>
-                            <li><a href="fw_page.php">Scrum</a></li>
-                            <li><a href="fw_page.php">Line out</a></li>
-                        </ul>
-                    </li>
-                    <!-- list2 -->
-                    <li>
-                        <button>Backs</button>
-                        <ul>
-                            <li><a href="bk_page.php">BK Page</a></li>
-                            <li><a href="bk_page.php">Traning</a></li>
-                            <li><a href="bk_page.php">Sign play</a></li>
-                        </ul>
-                    </li>
-                    <!-- list3 -->
-                    <li>
-                        <button>ALL member</button>
-                        <ul>
-                            <li><a href="member.php">ALL page</a></li>
-                            <li><a href="self_analysis.php">analysis</a></li>
-                            <li><a href="schedules.php">Schedule</a></li>
-                        </ul>
-                    </li>
-                    <!-- list4 -->
-                    <li><a href="gallery.php">Gallery</a></li>
-
-                </ul>
-            </nav>
+            <!--  -->
+            <a href="member.php">Back to TOP</a>
         </div>
     </header>
     <main>
 
         <!-- <?= $output1 ?> -->
         <fieldset>
-            <legend>リアルタイム検索型todoリスト</legend>
+            <legend>データ検索</legend>
 
             <div>
-                検索フォーム：
                 <!-- <input type="text" id="search"> -->
 
                 <select name="" id="search" size="10" style='height:160px;'>
-                    <option value="">all</option>
-                    <option value="game">game</option>
-                    <option value="traning">traning</option>
-                    <option value="lineout">lineout</option>
-                    <option value="scrum">scrum</option>
-                    <option value="kick">kick</option>
-                    <option value="tackle" selected>tackle</option>
+                    <option value="">・ALL</option>
+                    <option value="team">・team</option>
+                    <option value="fw">・fw</option>
+                    <option value="bk">・bk</option>
+                    <option value="private">・private</option>
+                    <option value="game">・Game</option>
+                    <option value="traning">・Traning</option>
+                    <option value="lineout">・Lineout</option>
+                    <option value="scrum">・Scrum</option>
+                    <option value="kick">・Kick</option>
+                    <option value="tackle">・Tackle</option>
                 </select>
                 <!-- <button id="search">検索</button> -->
             </div>
@@ -194,31 +165,33 @@ if ($status == false) {
                 </tbody>
             </table>
         </fieldset>
-        <article class="row">
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInLeft animated"><a href="upload/<?= $result[6]['image'] ?>" title=" View Larger Image" class="block green"><img src="upload/<?= $result[6]['image'] ?>" alt=" Image 2"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded rotateInDownLeft animated"><a href="<?= $result[1]['image'] ?>" title="View Larger Image" class="block blue"><img src="upload/<?= $result[1]['image'] ?>" alt="Image 2"></a> </div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInUp animated"><a href="<?$result[2]['image'] ?>" title=" View Larger Image" class="block yellow"><img src="<?= $result[2]['image'] ?>" alt="Image 4"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInDown animated"><a href="http://via.placeholder.com/900x500/9b59b6/ffffff/&amp;text=Image+3" title="View Larger Image" class="block purple"><img src="<?= $result[3]['image'] ?>" alt="Image 3"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded rotateInUpRight animated"><a href="http://via.placeholder.com/900x500/e67e22/ffffff/&amp;text=Image+5" title="View Larger Image" class="block orange"><img src="<?= $result[4]['image'] ?>" alt="Image 5"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInRight animated"><a href="http://via.placeholder.com/900x500/e74c3c/ffffff/&amp;text=Image+6" title="View Larger Image" class="block red"><img src="<?= $result[5]['image'] ?>" alt="Image 6"></a></div>
-        </article>
-        <article class="row">
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInDown animated"><a href="http://via.placeholder.com/900x500/34495e/ffffff/&amp;text=Image+9" title="View Larger Image" class="block asphalt"><img src="<?= $result[6]['image'] ?>" alt="Image 9"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded rotateInDownLeft animated"><a href="http://via.placeholder.com/900x500/1abc9c/ffffff/&amp;text=Image+8" title="View Larger Image" class="block turquoise"><img src="<?= $result[7]['image'] ?>" alt="Image 8"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded rotateInUpRight animated"><a href="http://via.placeholder.com/900x500/3498db/ffffff/&amp;text=Image+11" title="View Larger Image" class="block blue"><img src="<?= $result[8]['image'] ?>" alt=" Image 11"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInRight animated"><a href="http://via.placeholder.com/900x500/9b59b6/ffffff/&amp;text=Image+12" title="View Larger Image" class="block purple"><img src="<?= $result[9]['image'] ?>" alt="Image 12"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInUp animated"><a href="http://via.placeholder.com/900x500/2ecc71/ffffff/&amp;text=Image+10" title="View Larger Image" class="block green"><img src="<?= $result[10]['image'] ?>" alt="Image 10"></a></div>
-            <div class=" one sixth three-up-small-tablet two-up-mobile padded bounceInLeft animated"><a href="http://via.placeholder.com/900x500/f02475/ffffff/&amp;text=Image+7" title="View Larger Image" class="block pink"><img src="<?= $result[11]['image'] ?>" alt="Image 7"></a></div>
-        </article>
-        <article class="row">
-            <div class="one sixth three-up-small-tablet two-up-mobile padded rotateInDownLeft animated"><a href="http://via.placeholder.com/900x500/e67e22/ffffff/&amp;text=Image+14" title="View Larger Image" class="block orange"><img src="<?= $result[12]['image'] ?>" alt="Image 14"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInLeft animated"><a href="http://via.placeholder.com/900x500/f1c40f/ffffff/&amp;text=Image+13" title="View Larger Image" class="block yellow"><img src="<?= $result[13]['image'] ?>" alt="Image 13"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInRight animated"><a href="http://via.placeholder.com/900x500/34495e/ffffff/&amp;text=Image+18" title="View Larger Image" class="block asphalt"><img src="<?= $result[14]['image'] ?>" alt="Image 18"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInDown animated"><a href="http://via.placeholder.com/900x500/e74c3c/ffffff/&amp;text=Image+15" title="View Larger Image" class="block red"><img src="<?= $result[15]['image'] ?>" alt="Image 15"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded rotateInUpRight animated"><a href="http://via.placeholder.com/900x500/1abc9c/ffffff/&amp;text=Image+17" title="View Larger Image" class="block turquoise"><img src="<?= $result[16]['image'] ?>" alt="Image 17"></a></div>
-            <div class="one sixth three-up-small-tablet two-up-mobile padded bounceInUp animated"><a href="http://via.placeholder.com/900x500/f02475/ffffff/&amp;text=Image+16" title="View Larger Image" class="block pink"><img src="<?= $result[17]['image'] ?>" alt="Image 16"></a></div>
-        </article>
-        </div>
+        <fieldset id="media_file">
+            <article class="row">
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[0]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[1]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[2]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[3]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[4]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[5]['image'] ?>"></div>
+            </article>
+            <article class="row">
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[6]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[7]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[8]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[9]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[10]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[11]['image'] ?>"></div>
+            </article>
+            <article class="row">
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[12]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[13]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[14]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[15]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[16]['image'] ?>"></div>
+                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[17]['image'] ?>"></div>
+            </article>
+        </fieldset>
+
     </main>
 
     <footer class="gap-top bounceInUp animated">
@@ -266,7 +239,7 @@ if ($status == false) {
                     const output = [];
                     response.data.forEach(function(x) {
                         // output.push(`<img src="${x.image}" class="one sixth three-up-small-tablet two-up-mobile padded bounceInLeft animated">`)
-                        output.push(`<div class="one sixth three-up-small-tablet two-up-mobile padded bounceInDown animated"><img src="${x.image}" style="height:auto;"></div>`)
+                        output.push(`<div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="${x.image}" style="objest-fit:contain;"></a></div>`)
                     });
                     $('#result').html(output);
                     console.log(result);
@@ -275,7 +248,11 @@ if ($status == false) {
                     console.log(error);
                 })
                 .finally();
+            $('#media_file').css("display", "none");
         });
+        // $('#serch').on('click', function() {
+        //     $('#media_file').css("display", "none");
+        // });
     </script>
 
 </body>

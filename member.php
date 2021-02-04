@@ -271,7 +271,7 @@ if ($status == false) {
                 </div>
                 <div class="pad-right pad-left">
                     <p class="align-right">
-                        <button class="orange">View more</button>
+                        <button class="orange"><a href="gallery.php" style="color: white;"> gallery page</a></button>
                     </p>
                 </div>
             </aside>
@@ -312,7 +312,7 @@ if ($status == false) {
                 </div>
                 <div class="pad-right pad-left">
                     <p class="align-right">
-                        <button class="red">View more</button>
+                        <button class="orange"><a href="gallery.php" style="color: white;">gallery page</a></button>
                     </p>
                 </div>
             </aside>
@@ -343,7 +343,10 @@ if ($status == false) {
             <section class="one third padded">
                 <h3>Section 3</h3>
                 <div class="row">
-                    <div class="two-up-small-tablet one-up-mobile align-center"><img src="img/niconama.jpg" width="380px" height="200px" alt=""></div>
+                    <a href="meeting.php">
+                        <div class="two-up-small-tablet one-up-mobile align-center"><img src="img/niconama.jpg" width="380px" height="200px" alt="">
+                        </div>
+                    </a>
                     <div class="two-up-small-tablet one-up-mobile">
                         <p class="padded no-pad-mobile">
                             分析を行った動画を用いて、それを元にチャットを行うことができる。動画の再生と並行してコメントを残すことができることで味方がその時に何を考えていたのかがわかりやすくなり、更なるコミュニケーションの効率化が図ることができ、チーム力向上につながるteam

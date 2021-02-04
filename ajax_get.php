@@ -6,7 +6,7 @@ $search_word = $_GET['searchword'];
 // exit();
 $pdo = connect_to_db();
 
-$sql = "SELECT * FROM media WHERE image LIKE '%{$search_word}%'";
+$sql = "SELECT * FROM media WHERE image LIKE '%{$search_word}%' order by id desc";
 
 // SQL準備&実行
 $stmt = $pdo->prepare($sql);

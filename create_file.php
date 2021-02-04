@@ -30,7 +30,7 @@ if (!isset($_FILES['upfile']) || $_FILES['upfile']['error'] != 0) {
 
   // コード
   $extension = pathinfo($uploaded_file_name, PATHINFO_EXTENSION);
-  $unique_name = $filename . $filename0 . date('YmdHis') . md5(session_id()) . "." . $extension;
+  $unique_name = $date .  $filename . "-" . $filename0 . "." . $extension;
   $filename_to_save = $directory_path . $unique_name;
   // var_dump($filename_to_save);
   // exit();

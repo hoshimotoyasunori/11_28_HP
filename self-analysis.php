@@ -155,7 +155,7 @@ if ($status == false) {
             <table>
                 <!-- 表の上の左-->
                 <tr>
-                    <td class="td"><textarea id="sub_1_1"></textarea></td>
+                    <td class="td bounceInLeft animated"><textarea id="sub_1_1"></textarea></td>
                     <td class="td"><textarea id="sub_1_2"></textarea></td>
                     <td class="td"><textarea id="sub_1_3"></textarea></td>
 
@@ -175,7 +175,7 @@ if ($status == false) {
             <table>
                 <!-- 表の上の真ん中-->
                 <tr>
-                    <td class="td"><textarea id="sub_2_1"></textarea></td>
+                    <td class="td bounceInLeft animated"><textarea id="sub_2_1"></textarea></td>
                     <td class="td"><textarea id="sub_2_2"></textarea></td>
                     <td class="td"><textarea id="sub_2_3"></textarea></td>
                 </tr>
@@ -194,7 +194,7 @@ if ($status == false) {
             <table>
                 <!-- 表の上の右-->
                 <tr>
-                    <td class="td"><textarea id="sub_3_1"></textarea></td>
+                    <td class="td bounceInLeft animated"><textarea id="sub_3_1"></textarea></td>
                     <td class="td"><textarea id="sub_3_2"></textarea></td>
                     <td class="td"><textarea id="sub_3_3"></textarea></td>
                 </tr>
@@ -215,7 +215,7 @@ if ($status == false) {
             <table>
                 <!-- 表の2番目の左-->
                 <tr>
-                    <td class="td"><textarea id="sub_4_1"></textarea></td>
+                    <td class="td bounceInLeft animated"><textarea id="sub_4_1"></textarea></td>
                     <td class="td"><textarea id="sub_4_2"></textarea></td>
                     <td class="td"><textarea id="sub_4_3"></textarea></td>
                 </tr>
@@ -234,7 +234,7 @@ if ($status == false) {
             <table>
                 <!-- 表の2番目の真ん中-->
                 <tr>
-                    <td class="td"><textarea id="sub_target1" class="sub_target1" placeholder="目標"></textarea>
+                    <td class="td bounceInLeft animated"><textarea id="sub_target1" class="sub_target1" placeholder="目標"></textarea>
                     </td>
                     <td class="td"><textarea id="sub_target2" class="sub_target2" placeholder="目標"></textarea>
                     </td>
@@ -261,7 +261,7 @@ if ($status == false) {
             <table>
                 <!-- 表の2番目の右-->
                 <tr>
-                    <td class="td"><textarea id="sub_5_1"></textarea></td>
+                    <td class="td bounceInLeft animated"><textarea id="sub_5_1"></textarea></td>
                     <td class="td"><textarea id="sub_5_2"></textarea></td>
                     <td class="td"><textarea id="sub_5_3"></textarea></td>
                 </tr>
@@ -281,7 +281,7 @@ if ($status == false) {
             <table>
                 <!-- 表の3番目の左-->
                 <tr>
-                    <td class="td"><textarea id="sub_6_1"></textarea></td>
+                    <td class="td bounceInLeft animated"><textarea id="sub_6_1"></textarea></td>
                     <td class="td"><textarea id="sub_6_2"></textarea></td>
                     <td class="td"><textarea id="sub_6_3"></textarea></td>
                 </tr>
@@ -298,8 +298,8 @@ if ($status == false) {
             </table>
             <table>
                 <!-- 表の3番目の真ん中-->
-                <tr>
-                    <td class="td"><textarea id="sub_7_1"></textarea></td>
+                <tr class="bounceIn animated">
+                    <td class="td bounceInTop animated"><textarea id="sub_7_1"></textarea></td>
                     <td class="td"><textarea id="sub_7_2"></textarea></td>
                     <td class="td"><textarea id="sub_7_3"></textarea></td>
                 </tr>
@@ -315,10 +315,10 @@ if ($status == false) {
                     <td class="td"><textarea id="sub_7_8"></textarea></td>
                 </tr>
             </table>
-            <table>
+            <table class="bounceInLeft animated">
                 <!-- 表の3番目の右-->
                 <tr>
-                    <td class="td"><textarea id="sub_8_1"></textarea></td>
+                    <td class="td bounceInLeft animated"><textarea id="sub_8_1"></textarea></td>
                     <td class="td"><textarea id="sub_8_2"></textarea></td>
                     <td class="td"><textarea id="sub_8_3"></textarea></td>
                 </tr>

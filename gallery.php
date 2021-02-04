@@ -167,7 +167,7 @@ if ($status == false) {
         </fieldset>
         <fieldset id="media_file">
             <article class="row">
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[0]['image'] ?>"></div>
+                <div class="two sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[0]['image'] ?>"></div>
                 <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[1]['image'] ?>"></div>
                 <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[2]['image'] ?>"></div>
                 <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[3]['image'] ?>"></div>

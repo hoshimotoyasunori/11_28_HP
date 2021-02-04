@@ -49,6 +49,37 @@ if ($status == false) {
     // 今回は以降foreachしないので影響なし
     unset($value);
 }
+
+$sql = "SELECT image FROM media WHERE filename0 LIKE 'fw' order by id desc";
+$stmt = $pdo->prepare($sql);
+$status = $stmt->execute();
+
+// データ登録処理後
+if ($status == false) {
+    // SQL実行に失敗した場合はここでエラーを出力し，以降の処理を中止する
+    $error = $stmt->errorInfo();
+    echo json_encode(["error_msg" => "{$error[2]}"]);
+    exit();
+} else {
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    unset($value);
+}
+
+$sql = "SELECT image FROM media WHERE filename0 LIKE 'bk' order by id desc";
+$stmt = $pdo->prepare($sql);
+$status = $stmt->execute();
+
+// データ登録処理後
+if ($status == false) {
+    // SQL実行に失敗した場合はここでエラーを出力し，以降の処理を中止する
+    $error = $stmt->errorInfo();
+    echo json_encode(["error_msg" => "{$error[2]}"]);
+    exit();
+} else {
+    $result1 = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    unset($value);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -226,17 +257,17 @@ if ($status == false) {
                 <h3>FW Data Gallery</h3>
                 <div class="row">
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e67e22/ffffff/" alt=""></div>
+                        <img src="<?= $result[0]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e67e22/ffffff/" alt=""></div>
+                        <img src="<?= $result[1]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e67e22/ffffff/" alt=""></div>
+                        <img src="<?= $result[2]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e67e22/ffffff/" alt=""></div>
+                        <img src="<?= $result[3]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e67e22/ffffff/" alt=""></div>
+                        <img src="<?= $result[4]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e67e22/ffffff/" alt=""></div>
+                        <img src="<?= $result[5]['image'] ?>" alt=""></div>
                 </div>
                 <div class="pad-right pad-left">
                     <p class="align-right">
@@ -267,17 +298,17 @@ if ($status == false) {
                 <h3>BK Data Gallery</h3>
                 <div class="row">
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e74c3c/ffffff/" alt=""></div>
+                        <img src="<?= $result1[0]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e74c3c/ffffff/" alt=""></div>
+                        <img src="<?= $result1[1]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e74c3c/ffffff/" alt=""></div>
+                        <img src="<?= $result1[2]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e74c3c/ffffff/" alt=""></div>
+                        <img src="<?= $result1[3]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e74c3c/ffffff/" alt=""></div>
+                        <img src="<?= $result1[4]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="http://via.placeholder.com/120x85/e74c3c/ffffff/" alt=""></div>
+                        <img src="<?= $result1[5]['image'] ?>" alt=""></div>
                 </div>
                 <div class="pad-right pad-left">
                     <p class="align-right">

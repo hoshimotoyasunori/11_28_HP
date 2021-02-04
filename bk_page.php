@@ -130,7 +130,7 @@ if ($status == false) {
                         <ul>
                             <li><a href="member.php">ALL page</a></li>
                             <li><a href="self-analysis.php">analysis</a></li>
-                            <li><a href="member.php">Schedule</a></li>
+                            <li><a href="schedule.php">Schedule</a></li>
                         </ul>
                     </li>
                     <!-- list4 -->

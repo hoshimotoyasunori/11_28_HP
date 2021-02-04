@@ -143,7 +143,7 @@ if ($status == false) {
             <div>
                 <!-- <input type="text" id="search"> -->
 
-                <select name="" id="search" size="10" style='height:160px;'>
+                <select name="" id="search" size="10" style='height:120px;'>
                     <option value="">・ALL</option>
                     <option value="team">・team</option>
                     <option value="fw">・fw</option>

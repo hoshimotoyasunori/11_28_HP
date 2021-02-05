@@ -2,13 +2,13 @@
 session_start();
 include("functions.php");
 check_session_id();
-$pdo = connect_to_db();
+
 if (
   !isset($_POST['date']) || $_POST['date'] == '' ||
   !isset($_POST['filename']) || $_POST['filename'] == '' ||
-  !isset($_POST['filename0']) || $_POST['filename0'] == ''
-  // !isset($_POST['image']) || $_POST['image'] == '' ||
-  // !isset($_POST['message']) || $_POST['message'] == ''
+  !isset($_POST['filename0']) || $_POST['filename0'] == '' ||
+  // !isset($_POST['upfile']) || $_POST['upfile'] == '' ||
+  !isset($_POST['message']) || $_POST['message'] == ''
 ) {
   // var_dump($_POST);
   // exit();
@@ -21,17 +21,18 @@ $date = $_POST['date'];
 $filename = $_POST['filename'];
 $filename0 = $_POST['filename0'];
 $message = $_POST['message'];
-// $image = $_POST['image'];
+// $upfile = $_POST['upfile'];
 
-// var_dump($image);
+// var_dump($upfile);
 // exit();
 
 // ここからファイルアップロード&DB登録の処理を追加しよう！！！
-if (!isset($_FILES['image']) || $_FILES['image']['error'] != 0) {
+
+if (!isset($_FILES['upfile']) || $_FILES['upfile']['error'] != 0) {
   exit('画像の保存に失敗しました');
 } else {
-  $uploaded_file_name = $_FILES['image']['name']; //ファイル名の取得 
-  $temp_path = $_FILES['image']['tmp_name']; //tmpフォルダの場所 
+  $uploaded_file_name = $_FILES['upfile']['name']; //ファイル名の取得 
+  $temp_path = $_FILES['upfile']['tmp_name']; //tmpフォルダの場所 
   $directory_path = 'upload/'; //アップロード先ォルダ
 
   // コード

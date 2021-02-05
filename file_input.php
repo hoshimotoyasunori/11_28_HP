@@ -390,7 +390,7 @@ while ($i < count($display_tb_name_array)) { //上で作ったtbのname属性の
                 <label for="file">データ</label>
               </div>
 
-              <input type="file" name="image" accept="image/*" caputure="camera">
+              <input type="file" name="upfile" accept="image/*" caputure="camera">
 
             </div>
             <div class="row">

@@ -3,6 +3,8 @@ session_start();
 include("functions.php");
 check_session_id();
 
+
+
 // ユーザ名取得
 $user_id = $_SESSION['id'];
 

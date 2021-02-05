@@ -320,7 +320,7 @@ while ($i < count($display_tb_name_array)) { //上で作ったtbのname属性の
             <ul>
               <li><a href="member.php">ALL page</a></li>
               <li><a href="self-analysis.php">analysis</a></li>
-              <li><a href="file_input.php">file_input</a></li>
+              <li><a href="schedule.php">Schedule</a></li>
             </ul>
           </li>
           <!-- list4 -->
@@ -354,7 +354,7 @@ while ($i < count($display_tb_name_array)) { //上で作ったtbのname属性の
                 <label for="name">日付</label>
               </div>
               <div class="three small-tablet fourths padded no-pad-top-mobile">
-                <input id="name" name="name" type="date">
+                <input id="date" name="date" type="date">
               </div>
             </div>
             <div class="row">
@@ -389,16 +389,14 @@ while ($i < count($display_tb_name_array)) { //上で作ったtbのname属性の
               <div class="one small-tablet fourth padded no-pad-bottom-mobile">
                 <label for="file">データ</label>
               </div>
-              <div class="three small-tablet fourths padded no-pad-top-mobile">
-                <input type="file" name="upfile" accept="image/*" caputure="camera">
-              </div>
+
+              <input type="file" name="image" accept="image/*" caputure="camera">
+
             </div>
             <div class="row">
               <div class="one whole pad-left pad-right pad-top">
                 <label for="message">コメント</label>
               </div>
-            </div>
-            <div class="row">
               <div class="one whole pad-left pad-right pad-bottom">
                 <textarea id="message" name="message" placeholder="Write us a message here..."></textarea>
               </div>
@@ -416,121 +414,121 @@ while ($i < count($display_tb_name_array)) { //上で作ったtbのname属性の
 
           <!-- 何月を表示 -->
           <!-- 一ヶ月前のページへのリンク -->
-          <a href="file_input.php?first_day_of_month=<?php echo date('Y-m-01', strtotime("-1 month", strtotime($display_date))); ?>">
-            <<</a> <!-- /一ヶ月前のページへのリンク -->
-              <?php echo date('Y-n', strtotime($display_date)); ?>
-              <!-- 一ヶ月後のページへのリンク -->
-              <a href="file_input.php?first_day_of_month=<?php echo date('Y-m-01', strtotime("+1 month", strtotime($display_date))); ?>">>></a>
-              <!-- /一ヶ月後のページへのリンク -->
-              <br />
+          <a href="schedule.php?first_day_of_month=<?php echo date('Y-m-01', strtotime("-1 month", strtotime($display_date))); ?>">
+          </a> <!-- /一ヶ月前のページへのリンク -->
+          <?php echo date('Y-n', strtotime($display_date)); ?>
+          <!-- 一ヶ月後のページへのリンク -->
+          <a href="schedule.php?first_day_of_month=<?php echo date('Y-m-01', strtotime("+1 month", strtotime($display_date))); ?>"></a>
+          <!-- /一ヶ月後のページへのリンク -->
+          <br />
 
-              <!-- カレンダー部分 -->
+          <!-- カレンダー部分 -->
 
 
-              <table class="topcalendar" border="1">
-                <!-- 曜日表示部分 -->
-                <!-- $week_strings_array[]配列は、[]内に0～6の数値入れることで曜日を出力する配列、このファイル内で定義してる配列 -->
-                <?php $i = 0; ?>
-                <tr>
-                  <td class="sun" name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
-                                                                                    $i++; ?>><?php echo $week_strings_array[0]; ?></td>
-                  <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
-                                                                        $i++; ?>><?php echo $week_strings_array[1]; ?></td>
-                  <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
-                                                                        $i++; ?>><?php echo $week_strings_array[2]; ?></td>
-                  <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
-                                                                        $i++; ?>><?php echo $week_strings_array[3]; ?></td>
-                  <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
-                                                                        $i++; ?>><?php echo $week_strings_array[4]; ?></td>
-                  <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
-                                                                        $i++; ?>><?php echo $week_strings_array[5]; ?></td>
-                  <td class="sat" name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
-                                                                                    $i++; ?>><?php echo $week_strings_array[6]; ?></td>
-                </tr>
-                <!-- 日付表示部分 -->
+          <table class="topcalendar" border="1">
+            <!-- 曜日表示部分 -->
+            <!-- $week_strings_array[]配列は、[]内に0～6の数値入れることで曜日を出力する配列、このファイル内で定義してる配列 -->
+            <?php $i = 0; ?>
+            <tr>
+              <td class="sun" name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
+                                                                                $i++; ?>><?php echo $week_strings_array[0]; ?></td>
+              <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
+                                                                    $i++; ?>><?php echo $week_strings_array[1]; ?></td>
+              <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
+                                                                    $i++; ?>><?php echo $week_strings_array[2]; ?></td>
+              <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
+                                                                    $i++; ?>><?php echo $week_strings_array[3]; ?></td>
+              <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
+                                                                    $i++; ?>><?php echo $week_strings_array[4]; ?></td>
+              <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
+                                                                    $i++; ?>><?php echo $week_strings_array[5]; ?></td>
+              <td class="sat" name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
+                                                                                $i++; ?>><?php echo $week_strings_array[6]; ?></td>
+            </tr>
+            <!-- 日付表示部分 -->
+            <?php
+            //日付はどうやって出力してるかというと、tbのname属性の命名規則は「"name" カレンダーの行数 曜日数字」だから、
+            //初日1日は一行目に出したいから、「"name1" 初日1日の曜日数値」を比較して合ってたら日付を入れてる。
+            //ここを編集するときはインクリメントとか細かいところに注意する事。
+            //それで一回入れたらフラグを立ててそれ以降はフラグで判断して日付を入れてる
+
+            $ii = 0; //下記のカレンダー日付出力で使うインクリメント変数
+            $display_calendar_flag = 0; //下記のカレンダー日付出力で使うフラグ変数初期化　※月の初日1日目より前をを表示させない為だけに使う変数
+            for ($iii = 0; $iii < 5; $iii++) {
+            ?>
+              <tr>
                 <?php
-                //日付はどうやって出力してるかというと、tbのname属性の命名規則は「"name" カレンダーの行数 曜日数字」だから、
-                //初日1日は一行目に出したいから、「"name1" 初日1日の曜日数値」を比較して合ってたら日付を入れてる。
-                //ここを編集するときはインクリメントとか細かいところに注意する事。
-                //それで一回入れたらフラグを立ててそれ以降はフラグで判断して日付を入れてる
-
-                $ii = 0; //下記のカレンダー日付出力で使うインクリメント変数
-                $display_calendar_flag = 0; //下記のカレンダー日付出力で使うフラグ変数初期化　※月の初日1日目より前をを表示させない為だけに使う変数
-                for ($iii = 0; $iii < 5; $iii++) {
+                for ($iiii = 0; $iiii < 7; $iiii++) {
                 ?>
-                  <tr style="width: 50%;">
+                  <td name=<?php echo $display_tb_name_array[$i]; //name属性付与 
+                            ?> id=<?php
+                                  echo $display_tb_id_array[$i]; //id属性付与
+                                  ?>>
                     <?php
-                    for ($iiii = 0; $iiii < 7; $iiii++) {
-                    ?>
-                      <td style="height: calc(100vh/8);" name=<?php echo $display_tb_name_array[$i]; //name属性付与 
-                                                              ?> id=<?php
-                                                                    echo $display_tb_id_array[$i]; //id属性付与
-                                                                    ?>>
-                        <?php
-                        if ($display_calendar_flag == 1) { //flagが1だったら、下記の処理を実行
+                    if ($display_calendar_flag == 1) { //flagが1だったら、下記の処理を実行
 
-                          ///////////////ボタン追加したがうまくいかない////////////////
-                          echo "<button><a helf=''>$display_day_array[$ii] </a></button>" //日付を表示
-                            . display_to_Holidays(date("Y-m-d", strtotime($display_year . "-" . $display_month . "-" . $display_day_array[$ii])), $Holidays_array); //祝日があれば一行改行して表示、function.phpの中の関数
-                          $i++;
-                          $ii++;
-                        } elseif ($display_calendar_flag == 0) { //flagが0だったら、下記の処理を実行
-                          if ($display_tb_name_array[$i] == "name1" . date("w", strtotime($display_date))) { //tbのタグのname属性が一緒だったら1日目を表示させる為、下記の処理を実行
-                            echo $display_day_array[$ii] //日付を表示
-                              . display_to_Holidays(date("Y-m-d", strtotime($display_year . "-" . $display_month . "-" . $display_day_array[$ii])), $Holidays_array); //祝日があれば一行改行して表示、function.phpの中の関数
-                            $display_calendar_flag = 1; //flagを1に変える
-                            $ii++;
-                          }
-                          $i++;
-                        }
-                        ?>
-                      </td>
-                    <?php
+                      ///////////////ボタン追加したがうまくいかない////////////////
+                      echo "<button><a helf=''>$display_day_array[$ii] </a></button>" //日付を表示
+                        . display_to_Holidays(date("Y-m-d", strtotime($display_year . "-" . $display_month . "-" . $display_day_array[$ii])), $Holidays_array); //祝日があれば一行改行して表示、function.phpの中の関数
+                      $i++;
+                      $ii++;
+                    } elseif ($display_calendar_flag == 0) { //flagが0だったら、下記の処理を実行
+                      if ($display_tb_name_array[$i] == "name1" . date("w", strtotime($display_date))) { //tbのタグのname属性が一緒だったら1日目を表示させる為、下記の処理を実行
+                        echo $display_day_array[$ii] //日付を表示
+                          . display_to_Holidays(date("Y-m-d", strtotime($display_year . "-" . $display_month . "-" . $display_day_array[$ii])), $Holidays_array); //祝日があれば一行改行して表示、function.phpの中の関数
+                        $display_calendar_flag = 1; //flagを1に変える
+                        $ii++;
+                      }
+                      $i++;
                     }
                     ?>
-                  </tr>
+                  </td>
                 <?php
                 }
                 ?>
-                <?php //表が縦7行必要な時は、行を追加します。
-                if ((count($display_day_array) == 30 and date("w", strtotime($display_date)) >= 6)
-                  or ((count($display_day_array) >= 31 and date("w", strtotime($display_date)) >= 5))
-                ) { //月の日数が30日以上で、且つ、月の最初の1日が金曜か土曜から始まっていたら
+              </tr>
+            <?php
+            }
+            ?>
+            <?php //表が縦7行必要な時は、行を追加します。
+            if ((count($display_day_array) == 30 and date("w", strtotime($display_date)) >= 6)
+              or ((count($display_day_array) >= 31 and date("w", strtotime($display_date)) >= 5))
+            ) { //月の日数が30日以上で、且つ、月の最初の1日が金曜か土曜から始まっていたら
+            ?>
+              <tr>
+                <?php
+                for ($iiii = 0; $iiii < 7; $iiii++) {
                 ?>
-                  <tr>
+                  <td name=<?php echo $display_tb_name_array[$i]; //name属性付与 
+                            ?> id=<?php
+                                  echo $display_tb_id_array[$i]; //id属性付与
+                                  ?>>
                     <?php
-                    for ($iiii = 0; $iiii < 7; $iiii++) {
-                    ?>
-                      <td name=<?php echo $display_tb_name_array[$i]; //name属性付与 
-                                ?> id=<?php
-                                      echo $display_tb_id_array[$i]; //id属性付与
-                                      ?>>
-                        <?php
-                        if ($display_calendar_flag == 1) { //flagが1だったら、下記の処理を実行
-                          echo "<button><a helf=''>$display_day_array[$ii] </a></button>"  //日付を表示
-                            . display_to_Holidays(date("Y-m-d", strtotime($display_year . "-" . $display_month . "-" . $display_day_array[$ii])), $Holidays_array); //祝日があれば一行改行して表示、function.phpの中の関数
-                          $i++;
-                          $ii++;
-                        } elseif ($display_calendar_flag == 0) { //flagが0だったら、下記の処理を実行
-                          if ($display_tb_name_array[$i] == "name1" . date("w", strtotime($display_date))) { //tbのタグのname属性が一緒だったら1日目を表示させる為、下記の処理を実行
-                            echo $display_day_array[$ii] //日付を表示
-                              . display_to_Holidays(date("Y-m-d", strtotime($display_year . "-" . $display_month . "-" . $display_day_array[$ii])), $Holidays_array); //祝日があれば一行改行して表示、function.phpの中の関数
-                            $display_calendar_flag = 1; //flagを1に変える
-                            $ii++;
-                          }
-                          $i++;
-                        }
-                        ?>
-                      </td>
-                    <?php
+                    if ($display_calendar_flag == 1) { //flagが1だったら、下記の処理を実行
+                      echo "<button><a helf=''>$display_day_array[$ii] </a></button>"  //日付を表示
+                        . display_to_Holidays(date("Y-m-d", strtotime($display_year . "-" . $display_month . "-" . $display_day_array[$ii])), $Holidays_array); //祝日があれば一行改行して表示、function.phpの中の関数
+                      $i++;
+                      $ii++;
+                    } elseif ($display_calendar_flag == 0) { //flagが0だったら、下記の処理を実行
+                      if ($display_tb_name_array[$i] == "name1" . date("w", strtotime($display_date))) { //tbのタグのname属性が一緒だったら1日目を表示させる為、下記の処理を実行
+                        echo $display_day_array[$ii] //日付を表示
+                          . display_to_Holidays(date("Y-m-d", strtotime($display_year . "-" . $display_month . "-" . $display_day_array[$ii])), $Holidays_array); //祝日があれば一行改行して表示、function.phpの中の関数
+                        $display_calendar_flag = 1; //flagを1に変える
+                        $ii++;
+                      }
+                      $i++;
                     }
                     ?>
-                  </tr>
+                  </td>
                 <?php
                 }
                 ?>
-                <!-- /日付表示部分 -->
-              </table>
+              </tr>
+            <?php
+            }
+            ?>
+            <!-- /日付表示部分 -->
+          </table>
 
         </div>
     </article>
@@ -549,7 +547,38 @@ while ($i < count($display_tb_name_array)) { //上で作ったtbのname属性の
     </article>
   </div>
 
-  <! <footer class="gap-top bounceInUp animated">
+  <!-- <form action="create_file.php" method="POST" enctype="multipart/form-data">
+    <fieldset>
+      <legend>データ投稿画面</legend>
+
+      <div>
+        date: <input type="date" name="date">
+      </div>
+      <div>
+        タグ１: <select name="filename" id="">
+          <option value="game">game</option>
+          <option value="traning">traning</option>
+          <option value="lineout">lineout</option>
+          <option value="scrum">scrum</option>
+          <option value="kick">kick</option>
+          <option value="tackle">tackle</option>
+        </select>
+        タグ2: <select name="filename0" id="">
+          <option value="team">team</option>
+          <option value="fw">fw</option>
+          <option value="bk">bk</option>
+          <option value="private">private</option>
+        </select>
+      </div>
+      <div>
+        <input type="file" name="upfile" accept="image/*" caputure="camera">
+      </div>
+      <div>
+        <button>submit</button>
+      </div>
+    </fieldset>
+  </form> -->
+  <footer class="gap-top bounceInUp animated">
     <div class="box square charcoal">
       <div class="container padded">
         <div class="row">
@@ -578,21 +607,21 @@ while ($i < count($display_tb_name_array)) { //上で作ったtbのname属性の
       </div>
     </div>
 
-    </footer>
-    <!-- javascript-->
-    <script type="text/javascript" src="js/groundwork.all.js"></script>
-    <!-- google analytics-->
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+  </footer>
+  <!-- javascript-->
+  <script type="text/javascript" src="js/groundwork.all.js"></script>
+  <!-- google analytics-->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </body>

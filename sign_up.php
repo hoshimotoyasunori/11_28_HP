@@ -92,7 +92,7 @@
                     <h1 class="zero museo-slab">登録ページ</h1>
                 </div>
                 <div class="two fifths align-right-ipad align-right-desktop flipInX animated">
-                    <p><a href="index.html" rel="prev" class="blue button">HOME</a></p>
+                    <p><a href="member.php" rel="prev" class="blue button">HOME</a></p>
                 </div>
             </div>
         </div>

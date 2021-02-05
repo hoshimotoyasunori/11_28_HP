@@ -115,7 +115,7 @@ if ($status == false) {
         <div class="container">
             <div class="row">
                 <div class="one half">
-                    <h1 class="logo"><a href="index.html" target="_parent"><img src="img/8pos.jpeg" alt="GroundworkCSS">
+                    <h1 class="logo"><a href="member.php" target="_parent"><img src="img/8pos.jpeg" alt="GroundworkCSS">
                             Gallery
                         </a>
                     </h1>

@@ -93,7 +93,7 @@ if ($status == false) {
         <div class="container">
             <div class="row">
                 <div class="one half">
-                    <h2 class="logo"><a href="index.html" target="_parent"><img src="img/8pos.jpeg" alt="GroundworkCSS">8PoS-Lab</a>
+                    <h2 class="logo"><a href="member.php" target="_parent"><img src="img/8pos.jpeg" alt="GroundworkCSS">8PoS-Lab</a>
                     </h2>
                 </div>
                 <div class="one half">

@@ -98,7 +98,7 @@ if ($status == false) {
     <!-- framework css -->
     <!--[if gt IE 9]><!-->
     <link type="text/css" rel="stylesheet" href="css/groundwork.css">
-
+    <link rel="shortcut icon" href="./2021_01_30/img/data-83-16.png">
     <style type="text/css">
         .logo {
             position: relative;

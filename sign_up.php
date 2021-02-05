@@ -97,47 +97,101 @@
             </div>
         </div>
         <hr>
-        <article class="row">
-            <section class="two fourths right-one padded bounceInDown animated">
+        <div class="padded">
+            <div class="row">
+                <div class="two second bounceInRight animated">
 
-                <form action="sign_up_act.php" method="POST">
-                    <fieldset>
-                        <legend>選手登録画面</legend>
-                        <div>
-                            name: <input type="text" name="username">
-                        </div>
-                        <div>
-                            mail: <input type="text" name="mail">
-                        </div>
-                        <div>
-                            position:
-                            <select name="position" id="">
-                                <option value="-">-</option>
-                                <option value="PR">PR</option>
-                                <option value="HO">HO</option>
-                                <option value="LO">LO</option>
-                                <option value="FL">FL</option>
-                                <option value="NO8">NO8</option>
-                                <option value="SH">SH</option>
-                                <option value="SO">SO</option>
-                                <option value="CB">CB</option>
-                                <option value="WTB">WTB</option>
-                                <option value="FB">FB</option>
-                                <option value="staff">staff</option>
-                            </select>
-                        </div>
-                        <div>
-                            password: <input type="password" name="password">
-                        </div>
-                        <br>
-                        <div>
-                            <button>Register</button>
-                        </div>
-                    </fieldset>
-                </form>
+                    <section class="two fourths center-one padded bounceInDown animated">
 
-            </section>
-        </article>
+                        <form action="sign_up_act.php" method="POST">
+                            <fieldset>
+                                <legend>選手登録画面</legend>
+                                <div>
+                                    name: <input type="text" name="username">
+                                </div>
+                                <div>
+                                    mail: <input type="text" name="mail">
+                                </div>
+                                <div>
+                                    position:
+                                    <select name="position" id="">
+                                        <option value="-">-</option>
+                                        <option value="PR">PR</option>
+                                        <option value="HO">HO</option>
+                                        <option value="LO">LO</option>
+                                        <option value="FL">FL</option>
+                                        <option value="NO8">NO8</option>
+                                        <option value="SH">SH</option>
+                                        <option value="SO">SO</option>
+                                        <option value="CB">CB</option>
+                                        <option value="WTB">WTB</option>
+                                        <option value="FB">FB</option>
+                                        <option value="staff">staff</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    password: <input type="password" name="password">
+                                </div>
+                                <br>
+                                <div>
+                                    <button>Register</button>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </section>
+
+                </div>
+                <div class="two second bounceInRight animated">
+
+                    <section class="two fourths center-one padded bounceInDown animated">
+
+
+                        <form action="sign_up_kanri_act.php" method="POST">
+                            <fieldset>
+                                <legend>管理者登録画面</legend>
+                                <div>
+                                    name: <input type="text" name="username">
+                                </div>
+                                <div>
+                                    mail: <input type="text" name="mail">
+                                </div>
+                                <div>
+                                    position:
+                                    <select name="position" id="">
+                                        <option value="-">-</option>
+                                        <option value="PR">PR</option>
+                                        <option value="HO">HO</option>
+                                        <option value="LO">LO</option>
+                                        <option value="FL">FL</option>
+                                        <option value="NO8">NO8</option>
+                                        <option value="SH">SH</option>
+                                        <option value="SO">SO</option>
+                                        <option value="CB">CB</option>
+                                        <option value="WTB">WTB</option>
+                                        <option value="FB">FB</option>
+                                        <option value="staff">staff</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    password: <input type="password" name="password">
+                                </div>
+                                <br>
+                                <div>
+                                    <button>Register</button>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
 
 
     </div>

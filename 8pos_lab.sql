@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: localhost
--- 生成日時: 2021 年 2 月 04 日 16:36
+-- 生成日時: 2021 年 2 月 05 日 18:21
 -- サーバのバージョン： 10.4.17-MariaDB
 -- PHP のバージョン: 8.0.0
 
@@ -20,6 +20,32 @@ SET time_zone = "+00:00";
 --
 -- データベース: `8pos_lab`
 --
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `kanri_table`
+--
+
+CREATE TABLE `kanri_table` (
+  `id` int(11) NOT NULL,
+  `username` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `mail` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `position` varchar(12) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `is_admin` int(11) NOT NULL,
+  `is_deleted` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- テーブルのデータのダンプ `kanri_table`
+--
+
+INSERT INTO `kanri_table` (`id`, `username`, `mail`, `position`, `password`, `is_admin`, `is_deleted`, `created_at`, `updated_at`) VALUES
+(1, 'tehon', 'hoshimotoyasunori@yahoo.co.jp', 'HO', '111', 0, 0, '2021-02-06 01:46:47', '2021-02-06 01:46:47'),
+(3, 'chikara', 'chikara@gmail.com', 'WTB', '111', 0, 0, '2021-02-06 02:03:52', '2021-02-06 02:03:52');
 
 -- --------------------------------------------------------
 
@@ -66,7 +92,12 @@ INSERT INTO `media` (`id`, `image`, `date`, `filename`, `filename0`, `created_at
 (44, 'upload/tacklefw202102041629338c13208152ee21535cec13b6642e4e06.png', '2021-02-17 00:00:00', 'tackle', 'fw', '2021-02-05 00:29:33', '2021-02-05 00:29:33'),
 (45, 'upload/gamefw20210204162952d066f59f4ff8cb273df634064d6065a5.png', '2021-02-03 00:00:00', 'game', 'fw', '2021-02-05 00:29:52', '2021-02-05 00:29:52'),
 (46, 'upload/lineoutfw202102041632483745fa3a306e7218a6c530ce52720a7c.jpg', '2021-02-09 00:00:00', 'lineout', 'fw', '2021-02-05 00:32:48', '2021-02-05 00:32:48'),
-(47, 'upload/traningbk202102041633067e3a78f4a53f1eb3be709466bf97a7d0.png', '2021-02-26 00:00:00', 'traning', 'bk', '2021-02-05 00:33:06', '2021-02-05 00:33:06');
+(47, 'upload/traningbk202102041633067e3a78f4a53f1eb3be709466bf97a7d0.png', '2021-02-26 00:00:00', 'traning', 'bk', '2021-02-05 00:33:06', '2021-02-05 00:33:06'),
+(48, 'upload/lineout2021-01-01bk12f006e5cb2a6629a107ff00b17db57a.jpg', '2021-01-01 00:00:00', 'lineout', 'bk', '2021-02-05 00:40:07', '2021-02-05 00:40:07'),
+(49, 'upload/scrum2021-03-05bk.png', '2021-03-05 00:00:00', 'scrum', 'bk', '2021-02-05 00:41:12', '2021-02-05 00:41:12'),
+(50, 'upload/2021-02-22tackle-bk.jpeg', '2021-02-22 00:00:00', 'tackle', 'bk', '2021-02-05 00:42:47', '2021-02-05 00:42:47'),
+(51, 'upload/2021-02-02kick-team.jpg', '2021-02-02 00:00:00', 'kick', 'team', '2021-02-05 00:43:33', '2021-02-05 00:43:33'),
+(52, 'upload/2021-02-24kick-bk.png', '2021-02-24 00:00:00', 'kick', 'bk', '2021-02-05 00:46:52', '2021-02-05 00:46:52');
 
 -- --------------------------------------------------------
 
@@ -92,11 +123,21 @@ CREATE TABLE `users_table` (
 
 INSERT INTO `users_table` (`id`, `username`, `mail`, `position`, `password`, `is_admin`, `is_deleted`, `created_at`, `updated_at`) VALUES
 (1, 'tehon', 'hoshimotoyasunori@yahoo.co.jp', 'HO', '111', 0, 0, '2021-01-31 23:51:19', '2021-01-31 23:51:19'),
-(2, 'bin', 'bin@gmail.com', 'WTB', '111', 0, 0, '2021-02-01 11:47:24', '2021-02-01 11:47:24');
+(2, 'bin', 'bin@gmail.com', 'WTB', '111', 0, 0, '2021-02-01 11:47:24', '2021-02-01 11:47:24'),
+(3, 'tashi', 'tashi@gmail.com', 'SO', '111', 0, 0, '2021-02-06 01:53:41', '2021-02-06 01:53:41'),
+(4, 'kouki', 'kouki@gmail.com', 'PR', '111', 0, 0, '2021-02-06 01:59:16', '2021-02-06 01:59:16'),
+(5, 'suzuki', 'suzuki@gmail.com', 'staff', '111', 0, 0, '2021-02-06 02:01:26', '2021-02-06 02:01:26'),
+(6, 'chikara', 'chikara@gmail.com', 'WTB', '111', 0, 0, '2021-02-06 02:03:52', '2021-02-06 02:03:52');
 
 --
 -- ダンプしたテーブルのインデックス
 --
+
+--
+-- テーブルのインデックス `kanri_table`
+--
+ALTER TABLE `kanri_table`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- テーブルのインデックス `media`
@@ -115,16 +156,22 @@ ALTER TABLE `users_table`
 --
 
 --
+-- テーブルの AUTO_INCREMENT `kanri_table`
+--
+ALTER TABLE `kanri_table`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- テーブルの AUTO_INCREMENT `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- テーブルの AUTO_INCREMENT `users_table`
 --
 ALTER TABLE `users_table`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

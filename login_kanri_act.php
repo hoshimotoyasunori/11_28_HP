@@ -1,3 +1,4 @@
+
 <?php
 // var_dump($_POST);
 // exit();
@@ -13,7 +14,7 @@ $username = $_POST["username"];
 $password = $_POST["password"];
 
 // データ取得SQL作成&実行
-$sql = 'SELECT * FROM users_table WHERE username=:username AND password=:password AND is_deleted=0';
+$sql = 'SELECT * FROM kanri_table WHERE username=:username AND password=:password AND is_deleted=0';
 
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
@@ -33,7 +34,7 @@ $val = $stmt->fetch(PDO::FETCH_ASSOC);
 // ユーザ情報が取得できない場合はメッセージを表示
 if (!$val) {
     echo "<p>ログイン情報に誤りがあります．</p>";
-    echo '<a href="login.php">login</a>';
+    echo '<a href="login_kanri.php">管理者login</a>';
     exit();
 } else {
     $_SESSION = array();
@@ -41,6 +42,6 @@ if (!$val) {
     $_SESSION["is_admin"] = $val["is_admin"];
     $_SESSION["username"] = $val["username"];
     $_SESSION["id"] = $val["id"];
-    header("Location:member.php");
+    header("Location:sign_up.php");
     exit();
 }

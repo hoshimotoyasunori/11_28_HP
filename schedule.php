@@ -320,8 +320,8 @@ while ($i < count($display_tb_name_array)) { //上で作ったtbのname属性の
                         <!-- $week_strings_array[]配列は、[]内に0～6の数値入れることで曜日を出力する配列、このファイル内で定義してる配列 -->
                         <?php $i = 0; ?>
                         <tr>
-                            <td class="sun" name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
-                                                                                                $i++; ?>><?php echo $week_strings_array[0]; ?></td>
+                            <td class="sun" style="background-color: tomato;" name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
+                                                                                                                                $i++; ?>><?php echo $week_strings_array[0]; ?></td>
                             <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
                                                                                     $i++; ?>><?php echo $week_strings_array[1]; ?></td>
                             <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
@@ -332,8 +332,8 @@ while ($i < count($display_tb_name_array)) { //上で作ったtbのname属性の
                                                                                     $i++; ?>><?php echo $week_strings_array[4]; ?></td>
                             <td name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
                                                                                     $i++; ?>><?php echo $week_strings_array[5]; ?></td>
-                            <td class="sat" name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
-                                                                                                $i++; ?>><?php echo $week_strings_array[6]; ?></td>
+                            <td class="sat" style="background-color: royalblue;" name=<?php echo $display_tb_name_array[$i]; ?> id=<?php echo $display_tb_id_array[$i];
+                                                                                                                                    $i++; ?>><?php echo $week_strings_array[6]; ?></td>
                         </tr>
                         <!-- 日付表示部分 -->
                         <?php
@@ -350,10 +350,10 @@ while ($i < count($display_tb_name_array)) { //上で作ったtbのname属性の
                                 <?php
                                 for ($iiii = 0; $iiii < 7; $iiii++) {
                                 ?>
-                                    <td name=<?php echo $display_tb_name_array[$i]; //name属性付与 
-                                                ?> id=<?php
-                                                        echo $display_tb_id_array[$i]; //id属性付与
-                                                        ?>>
+                                    <td style="height:calc(100vh/8);" name=<?php echo $display_tb_name_array[$i]; //name属性付与 
+                                                                            ?> id=<?php
+                                                                                    echo $display_tb_id_array[$i]; //id属性付与
+                                                                                    ?>>
                                         <?php
                                         if ($display_calendar_flag == 1) { //flagが1だったら、下記の処理を実行
 

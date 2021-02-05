@@ -155,58 +155,58 @@ if ($status == false) {
             <table>
                 <!-- 表の上の左-->
                 <tr>
-                    <td class="td bounceInLeft animated"><textarea id="sub_1_1"></textarea></td>
-                    <td class="td"><textarea id="sub_1_2"></textarea></td>
-                    <td class="td"><textarea id="sub_1_3"></textarea></td>
+                    <td class="td rotateInDownLeft animated"><textarea id="sub_1_1"></textarea></td>
+                    <td class="td fadeInDownBig animated"><textarea id="sub_1_2"></textarea></td>
+                    <td class="td rotateInDownRight animated"><textarea id="sub_1_3"></textarea></td>
 
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_1_4"></textarea></td>
-                    <td class="td"><textarea id="sub_1" class="sub_target1" placeholder="目標"></textarea>
+                    <td class="td fadeInLeftBig animated"><textarea id="sub_1_4"></textarea></td>
+                    <td class="td rotateIn animated"><textarea id="sub_1" class="sub_target1" placeholder="目標"></textarea>
                     </td>
-                    <td class="td"><textarea id="sub_1_5"></textarea></td>
+                    <td class="td fadeInRightBig animated"><textarea id="sub_1_5"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_1_6"></textarea></td>
-                    <td class="td"><textarea id="sub_1_7"></textarea></td>
-                    <td class="td"><textarea id="sub_1_8"></textarea></td>
+                    <td class="td rotateInUpLeft animated"><textarea id="sub_1_6"></textarea></td>
+                    <td class="td fadeInUpBig animated"><textarea id="sub_1_7"></textarea></td>
+                    <td class="td rotateInUpRight animated"><textarea id="sub_1_8"></textarea></td>
                 </tr>
             </table>
             <table>
                 <!-- 表の上の真ん中-->
                 <tr>
-                    <td class="td bounceInLeft animated"><textarea id="sub_2_1"></textarea></td>
-                    <td class="td"><textarea id="sub_2_2"></textarea></td>
-                    <td class="td"><textarea id="sub_2_3"></textarea></td>
+                    <td class="td rotateInDownLeft animated"><textarea id="sub_2_1"></textarea></td>
+                    <td class="td fadeInDownBig animated"><textarea id="sub_2_2"></textarea></td>
+                    <td class="td rotateInDownRight animated"><textarea id="sub_2_3"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_2_4"></textarea></td>
-                    <td class="td"><textarea id="sub_2" class="sub_target2" placeholder="目標"></textarea>
+                    <td class="td fadeInLeftBig animated"><textarea id="sub_2_4"></textarea></td>
+                    <td class="td rotateIn animated"><textarea id="sub_2" class="sub_target2" placeholder="目標"></textarea>
                     </td>
-                    <td class="td"><textarea id="sub_2_5"></textarea></td>
+                    <td class="td fadeInRightBig animated"><textarea id="sub_2_5"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_2_6"></textarea></td>
-                    <td class="td"><textarea id="sub_2_7"></textarea></td>
-                    <td class="td"><textarea id="sub_2_8"></textarea></td>
+                    <td class="td rotateInUpLeft animated"><textarea id="sub_2_6"></textarea></td>
+                    <td class="td fadeInUpBig animated"><textarea id="sub_2_7"></textarea></td>
+                    <td class="td rotateInUpRight animated"><textarea id="sub_2_8"></textarea></td>
                 </tr>
             </table>
             <table>
                 <!-- 表の上の右-->
                 <tr>
-                    <td class="td bounceInLeft animated"><textarea id="sub_3_1"></textarea></td>
-                    <td class="td"><textarea id="sub_3_2"></textarea></td>
-                    <td class="td"><textarea id="sub_3_3"></textarea></td>
+                    <td class="td rotateInDownLeft animated"><textarea id="sub_3_1"></textarea></td>
+                    <td class="td fadeInDownBig animated"><textarea id="sub_3_2"></textarea></td>
+                    <td class="td rotateInDownRight animated"><textarea id="sub_3_3"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_3_4"></textarea></td>
-                    <td class="td"><textarea id="sub_3" class="sub_target3" placeholder="目標"></textarea>
-                    <td class="td"><textarea id="sub_3_5"></textarea></td>
+                    <td class="td fadeInLeftBig animated"><textarea id="sub_3_4"></textarea></td>
+                    <td class="td rotateIn animated"><textarea id="sub_3" class="sub_target3" placeholder="目標"></textarea>
+                    <td class="td fadeInRightBig animated"><textarea id="sub_3_5"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_3_6"></textarea></td>
-                    <td class="td"><textarea id="sub_3_7"></textarea></td>
-                    <td class="td"><textarea id="sub_3_8"></textarea></td>
+                    <td class="td rotateInUpLeft animated"><textarea id="sub_3_6"></textarea></td>
+                    <td class="td fadeInUpBig animated"><textarea id="sub_3_7"></textarea></td>
+                    <td class="td rotateInUpRight animated"><textarea id="sub_3_8"></textarea></td>
                 </tr>
             </table>
         </div>
@@ -215,65 +215,65 @@ if ($status == false) {
             <table>
                 <!-- 表の2番目の左-->
                 <tr>
-                    <td class="td bounceInLeft animated"><textarea id="sub_4_1"></textarea></td>
-                    <td class="td"><textarea id="sub_4_2"></textarea></td>
-                    <td class="td"><textarea id="sub_4_3"></textarea></td>
+                    <td class="td rotateInDownLeft animated"><textarea id="sub_4_1"></textarea></td>
+                    <td class="td fadeInDownBig animated"><textarea id="sub_4_2"></textarea></td>
+                    <td class="td rotateInDownRight animated"><textarea id="sub_4_3"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_4_4"></textarea></td>
-                    <td class="td"><textarea id="sub_4" class="sub_target4" style="border:none" placeholder="目標"></textarea>
+                    <td class="td fadeInLeftBig animated"><textarea id="sub_4_4"></textarea></td>
+                    <td class="td rotateIn animated"><textarea id="sub_4" class="sub_target4" style="border:none" placeholder="目標"></textarea>
                     </td>
-                    <td class="td"><textarea id="sub_4_5"></textarea></td>
+                    <td class="td fadeInRightBig animated"><textarea id="sub_4_5"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_4_6"></textarea></td>
-                    <td class="td"><textarea id="sub_4_7"></textarea></td>
-                    <td class="td"><textarea id="sub_4_8"></textarea></td>
+                    <td class="td rotateInUpLeft animated"><textarea id="sub_4_6"></textarea></td>
+                    <td class="td fadeInUpBig animated"><textarea id="sub_4_7"></textarea></td>
+                    <td class="td rotateInUpRight animated"><textarea id="sub_4_8"></textarea></td>
                 </tr>
             </table>
             <table>
                 <!-- 表の2番目の真ん中-->
                 <tr>
-                    <td class="td bounceInLeft animated"><textarea id="sub_target1" class="sub_target1" placeholder="目標"></textarea>
+                    <td class="td rotateInDownLeft animated"><textarea id="sub_target1" class="sub_target1" placeholder="目標"></textarea>
                     </td>
-                    <td class="td"><textarea id="sub_target2" class="sub_target2" placeholder="目標"></textarea>
+                    <td class="td fadeInDownBig animated"><textarea id="sub_target2" class="sub_target2" placeholder="目標"></textarea>
                     </td>
-                    <td class="td"><textarea id="sub_target3" class="sub_target3" placeholder="目標"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td"><textarea id="sub_target4" class="sub_target4" placeholder="目標"></textarea>
-                    </td>
-                    <td class="td"><textarea id="main_target" class="main_target" placeholder="目的" autofocus></textarea>
-                    </td>
-                    <td class="td"><textarea id="sub_target5" class="sub_target5" placeholder="目標"></textarea>
+                    <td class="td rotateInDownRight animated"><textarea id="sub_target3" class="sub_target3" placeholder="目標"></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_target6" class="sub_target6" placeholder="目標"></textarea>
+                    <td class="td fadeInLeftBig animated"><textarea id="sub_target4" class="sub_target4" placeholder="目標"></textarea>
                     </td>
-                    <td class="td"><textarea id="sub_target7" class="sub_target7" placeholder="目標"></textarea>
+                    <td class="td rotateIn animated"><textarea id="main_target" class="main_target" placeholder="目的" autofocus></textarea>
                     </td>
-                    <td class="td"><textarea id="sub_target8" class="sub_target8" placeholder="目標"></textarea>
+                    <td class="td fadeInRightBig animated"><textarea id="sub_target5" class="sub_target5" placeholder="目標"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td rotateInUpLeft animated"><textarea id="sub_target6" class="sub_target6" placeholder="目標"></textarea>
+                    </td>
+                    <td class="td fadeInUpBig animated"><textarea id="sub_target7" class="sub_target7" placeholder="目標"></textarea>
+                    </td>
+                    <td class="td rotateInUpRight animated"><textarea id="sub_target8" class="sub_target8" placeholder="目標"></textarea>
                     </td>
                 </tr>
             </table>
             <table>
                 <!-- 表の2番目の右-->
                 <tr>
-                    <td class="td bounceInLeft animated"><textarea id="sub_5_1"></textarea></td>
-                    <td class="td"><textarea id="sub_5_2"></textarea></td>
-                    <td class="td"><textarea id="sub_5_3"></textarea></td>
+                    <td class="td rotateInDownLeft animated"><textarea id="sub_5_1"></textarea></td>
+                    <td class="td fadeInDownBig animated"><textarea id="sub_5_2"></textarea></td>
+                    <td class="td rotateInDownRight animated"><textarea id="sub_5_3"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_5_4"></textarea></td>
-                    <td class="td"><textarea id="sub_5" class="sub_target5" placeholder="目標"></textarea>
-                    <td class="td"><textarea id="sub_5_5"></textarea></td>
+                    <td class="td fadeInLeftBig animated"><textarea id="sub_5_4"></textarea></td>
+                    <td class="td rotateIn animated"><textarea id="sub_5" class="sub_target5" placeholder="目標"></textarea>
+                    <td class="td fadeInRightBig animated"><textarea id="sub_5_5"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_5_6"></textarea></td>
-                    <td class="td"><textarea id="sub_5_7"></textarea></td>
-                    <td class="td"><textarea id="sub_5_8"></textarea></td>
+                    <td class="td rotateInUpLeft animated"><textarea id="sub_5_6"></textarea></td>
+                    <td class="td fadeInUpBig animated"><textarea id="sub_5_7"></textarea></td>
+                    <td class="td rotateInUpRight animated"><textarea id="sub_5_8"></textarea></td>
             </table>
         </div>
         <div class="box">
@@ -281,63 +281,63 @@ if ($status == false) {
             <table>
                 <!-- 表の3番目の左-->
                 <tr>
-                    <td class="td bounceInLeft animated"><textarea id="sub_6_1"></textarea></td>
-                    <td class="td"><textarea id="sub_6_2"></textarea></td>
-                    <td class="td"><textarea id="sub_6_3"></textarea></td>
+                    <td class="td rotateInDownLeft animated"><textarea id="sub_6_1"></textarea></td>
+                    <td class="td fadeInDownBig animated"><textarea id="sub_6_2"></textarea></td>
+                    <td class="td rotateInDownRight animated"><textarea id="sub_6_3"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_6_4"></textarea></td>
-                    <td class="td"><textarea id="sub_6" class="sub_target6" placeholder="目標"></textarea>
-                    <td class="td"><textarea id="sub_6_5"></textarea></td>
+                    <td class="td fadeInLeftBig animated"><textarea id="sub_6_4"></textarea></td>
+                    <td class="td rotateIn animated"><textarea id="sub_6" class="sub_target6" placeholder="目標"></textarea>
+                    <td class="td fadeInRightBig animated"><textarea id="sub_6_5"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_6_6"></textarea></td>
-                    <td class="td"><textarea id="sub_6_7"></textarea></td>
-                    <td class="td"><textarea id="sub_6_8"></textarea></td>
+                    <td class="td rotateInUpLeft animated"><textarea id="sub_6_6"></textarea></td>
+                    <td class="td fadeInUpBig animated"><textarea id="sub_6_7"></textarea></td>
+                    <td class="td rotateInUpRight animated"><textarea id="sub_6_8"></textarea></td>
                 </tr>
             </table>
             <table>
                 <!-- 表の3番目の真ん中-->
-                <tr class="bounceIn animated">
-                    <td class="td bounceInTop animated"><textarea id="sub_7_1"></textarea></td>
-                    <td class="td"><textarea id="sub_7_2"></textarea></td>
-                    <td class="td"><textarea id="sub_7_3"></textarea></td>
+                <tr>
+                    <td class="td rotateInDownLeft animated"><textarea id="sub_7_1"></textarea></td>
+                    <td class="td fadeInDownBig animated"><textarea id="sub_7_2"></textarea></td>
+                    <td class="td rotateInDownRight animated"><textarea id="sub_7_3"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_7_4"></textarea></td>
-                    <td class="td"><textarea id="sub_7" class="sub_target7" placeholder="目標"></textarea>
+                    <td class="td fadeInLeftBig animated"><textarea id="sub_7_4"></textarea></td>
+                    <td class="td rotateIn animated"><textarea id="sub_7" class="sub_target7" placeholder="目標"></textarea>
                     </td>
-                    <td class="td"><textarea id="sub_7_5"></textarea></td>
+                    <td class="td fadeInRightBig animated"><textarea id="sub_7_5"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_7_6"></textarea></td>
-                    <td class="td"><textarea id="sub_7_7"></textarea></td>
-                    <td class="td"><textarea id="sub_7_8"></textarea></td>
+                    <td class="td rotateInUpLeft animated"><textarea id="sub_7_6"></textarea></td>
+                    <td class="td fadeInUpBig animated"><textarea id="sub_7_7"></textarea></td>
+                    <td class="td rotateInUpRight animated"><textarea id="sub_7_8"></textarea></td>
                 </tr>
             </table>
-            <table class="bounceInLeft animated">
+            <table>
                 <!-- 表の3番目の右-->
                 <tr>
-                    <td class="td bounceInLeft animated"><textarea id="sub_8_1"></textarea></td>
-                    <td class="td"><textarea id="sub_8_2"></textarea></td>
-                    <td class="td"><textarea id="sub_8_3"></textarea></td>
+                    <td class="td rotateInDownLeft animated"><textarea id="sub_8_1"></textarea></td>
+                    <td class="td fadeInDownBig animated"><textarea id="sub_8_2"></textarea></td>
+                    <td class="td rotateInDownRight animated"><textarea id="sub_8_3"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_8_4"></textarea></td>
-                    <td class="td"><textarea id="sub_8" class="sub_target8" placeholder="目標"></textarea>
+                    <td class="td fadeInLeftBig animated"><textarea id="sub_8_4"></textarea></td>
+                    <td class="td rotateIn animated"><textarea id="sub_8" class="sub_target8" placeholder="目標"></textarea>
                     </td>
-                    <td class="td"><textarea id="sub_8_5"></textarea></td>
+                    <td class="td fadeInRightBig animated"><textarea id="sub_8_5"></textarea></td>
                 </tr>
                 <tr>
-                    <td class="td"><textarea id="sub_8_6"></textarea></td>
-                    <td class="td"><textarea id="sub_8_7"></textarea></td>
-                    <td class="td"><textarea id="sub_8_8"></textarea></td>
+                    <td class="td rotateInUpLeft animated"><textarea id="sub_8_6"></textarea></td>
+                    <td class="td fadeInUpBig animated"><textarea id="sub_8_7"></textarea></td>
+                    <td class="td rotateInUpRight animated"><textarea id="sub_8_8"></textarea></td>
                 </tr>
             </table>
         </div>
     </main>
 
-    <footer class="gap-top bounceInUp animated">
+    <footer class="gap-top bounceInUp  animated">
         <div class="box square charcoal">
             <div class="container padded">
                 <div class="row">

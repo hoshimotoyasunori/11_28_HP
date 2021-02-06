@@ -140,23 +140,30 @@ if ($status == false) {
         <fieldset>
             <legend>データ検索</legend>
 
-            <div>
+            <div style='display:-webkit-flex; display: flex;'>
                 <!-- <input type="text" id="search"> -->
 
-                <select name="" id="search" size="10" style='height:120px;'>
-                    <option value="">・ALL</option>
-                    <option value="team">・team</option>
-                    <option value="fw">・fw</option>
-                    <option value="bk">・bk</option>
-                    <option value="private">・private</option>
-                    <option value="game">・Game</option>
-                    <option value="traning">・Traning</option>
-                    <option value="lineout">・Lineout</option>
-                    <option value="scrum">・Scrum</option>
-                    <option value="kick">・Kick</option>
-                    <option value="tackle">・Tackle</option>
+                <select name="" id="search" size="10" style='height:80px; width:calc(100%/4); text-align:center; padding:0px;'>
+                    <option value="">ALL</option>
+                    <option value="team">team</option>
+                    <option value="fw">fw</option>
+                </select>
+                <select name="" id="search1" size="10" style='height:80px; width:calc(100%/4); text-align:center;padding:0px;'>
+                    <option value="bk">bk</option>
+                    <option value="private">private</option>
+                    <option value="game">Game</option>
+                </select>
+                <select name="" id="search2" size="10" style='height:80px; width:calc(100%/4); text-align:center;padding:0px;'>
+                    <option value="traning">Traning</option>
+                    <option value="lineout">Lineout</option>
+                    <option value="scrum">Scrum</option>
+                </select>
+                <select name="" id="search3" size="10" style='height:80px; width:calc(100%/4); text-align:center;padding:0px;'>
+                    <option value="kick">Kick</option>
+                    <option value="tackle">Tackle</option>
                 </select>
                 <!-- <button id="search">検索</button> -->
+                <hr>
             </div>
             <table>
 
@@ -167,28 +174,28 @@ if ($status == false) {
         </fieldset>
         <fieldset id="media_file">
             <article class="row">
-                <div class="two sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[0]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[1]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[2]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[3]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[4]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[5]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[0]['image'] ?> "></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[1]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[2]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[3]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[4]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[5]['image'] ?>"></div>
             </article>
             <article class="row">
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[6]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[7]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[8]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[9]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[10]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[11]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[6]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[7]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[8]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[9]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[10]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[11]['image'] ?>"></div>
             </article>
             <article class="row">
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[12]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[13]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[14]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[15]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[16]['image'] ?>"></div>
-                <div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="<?= $result[17]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[12]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[13]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[14]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[15]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[16]['image'] ?>"></div>
+                <div width="20vw" height="12vh" class="one sixth  three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="<?= $result[17]['image'] ?>"></div>
             </article>
         </fieldset>
 
@@ -229,7 +236,7 @@ if ($status == false) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-        $('#search').on('click', function() {
+        $('option').on('click', function() {
             console.log($(this).val());
             const searchWord = $(this).val();
             const requestUrl = 'ajax_get.php';
@@ -238,8 +245,7 @@ if ($status == false) {
                     console.log(response);
                     const output = [];
                     response.data.forEach(function(x) {
-                        // output.push(`<img src="${x.image}" class="one sixth three-up-small-tablet two-up-mobile padded bounceInLeft animated">`)
-                        output.push(`<div class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img src="${x.image}" style="objest-fit:contain;"></a></div>`)
+                        output.push(`<div width="20vw" height="12vh" class="one sixth three-up-small-tablet two-up-mobile padded rotateIn animated"><img width="300px" height="120px" src="${x.image}" style="objest-fit:contain;"></a></div>`)
                     });
                     $('#result').html(output);
                     console.log(result);
@@ -250,9 +256,6 @@ if ($status == false) {
                 .finally();
             $('#media_file').css("display", "none");
         });
-        // $('#serch').on('click', function() {
-        //     $('#media_file').css("display", "none");
-        // });
     </script>
 
 </body>

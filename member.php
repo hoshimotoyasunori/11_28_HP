@@ -257,17 +257,17 @@ if ($status == false) {
                 <h3>FW Data Gallery</h3>
                 <div class="row">
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result[0]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result[0]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result[1]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result[1]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result[2]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result[2]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result[3]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result[3]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result[4]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result[4]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result[5]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result[5]['image'] ?>" alt=""></div>
                 </div>
                 <div class="pad-right pad-left">
                     <p class="align-right">
@@ -298,17 +298,17 @@ if ($status == false) {
                 <h3>BK Data Gallery</h3>
                 <div class="row">
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result1[0]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result1[0]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result1[1]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result1[1]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result1[2]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result1[2]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result1[3]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result1[3]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result1[4]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result1[4]['image'] ?>" alt=""></div>
                     <div class="one half three-up-small-tablet two-up-mobile padded align-center">
-                        <img src="<?= $result1[5]['image'] ?>" alt=""></div>
+                        <img width="200px" height="80px" src="<?= $result1[5]['image'] ?>" alt=""></div>
                 </div>
                 <div class="pad-right pad-left">
                     <p class="align-right">
